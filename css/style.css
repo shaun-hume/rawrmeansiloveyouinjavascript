@@ -1,0 +1,137 @@
+body {
+  background: #FED550;
+  transition: transform 2s ease;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heart:hover{
+  animation: heartbeat 1s infinite;
+}
+
+.transition{
+  animation:transitionAnimation 2s;
+}
+
+@keyframes transitionAnimation {
+  100% {
+    background-color: red;
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale( 1 )
+    rotate(315deg);    
+  }
+  20% {
+    transform: scale( 1.25 )
+      rotate(315deg);
+  } 
+  40% {
+    transform: scale( 1.5 ) 
+      rotate(315deg);
+  }
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 240px;
+  height: 350px;
+  border-radius: 120px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.heart {
+  background-color: red;
+  display: inline-block;
+  height: 300px;
+  margin: 0 100px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 300px;
+  transition: transform .5s ease;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 300px;
+  position: absolute;
+  width: 300px;
+}
+
+.heart:before {
+  top: -150px;
+  left: 0;
+}
+
+.heart:after {
+  left: 150px;
+  top: 0;
+}
+
+.face {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 200px;
+  padding-bottom: 33%;
+  transform: rotate(45deg);
+  z-index: 10 ;
+}
+
+.eyes {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.eye {
+  position: relative;
+  width: 80px;
+  height: 60px;
+  background: rgb(255, 255, 255);
+  border-bottom: 2px solid #FF98CC;
+  border-radius: 100%;
+}
+
+.eye::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-40%);
+  width: 16px;
+  height: 16px;
+  background: rgb(0, 0, 0);
+  border-radius: 100%;
+}
+
+.mouth {
+  width: 100px;
+  height: 150px;
+  margin-top: 10px;
+  background: #9b0101;
+  border-radius: 10px;
+  border-bottom: 2px solid #530000;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
