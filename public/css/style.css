@@ -18,7 +18,7 @@ body {
 }
 
 .transition{
-  animation:transitionAnimation 2s;
+  animation:transitionAnimation 1s;
 }
 
 @keyframes transitionAnimation {
