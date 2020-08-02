@@ -5,24 +5,11 @@ function enterTheHeart() {
   }, 900);
 }
 
-function populateStorage() {
-  console.log("the value is set:" + localStorage.getItem("storedindb"));
-  localStorage.setItem("storedindb", Date.now());
-  document.getElementById("storageStatus").innerHTML = localStorage.getItem(
-    "storedindb"
-  );
+
+function openPaper() {
+
 }
 
-function clearStorage() {
-  localStorage.clear();
-  document.getElementById("storageStatus").innerHTML = "false";
-}
-
-function loadPuzzles() {
-    // var files = fs.readdirSync('/puzzles/');
-    // console.log(files);
-}
-
-function openEnvelopeAnimation() {
-  document.getElementById("envelope").classList.add("openEnvelope");
+function loadQuestNotes() {
+  document.getElementById("questNotes").innerHTML = "ENTER YOUR QUEST NOTES HERE";
 }
