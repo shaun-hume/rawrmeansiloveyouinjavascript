@@ -5,11 +5,6 @@ function enterTheHeart() {
   }, 900);
 }
 
-
-function openPaper() {
-
-}
-
 function loadQuestNotes() {
   document.getElementById("questNotes").innerHTML = "ENTER YOUR QUEST NOTES HERE";
 }
