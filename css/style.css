@@ -135,3 +135,48 @@ body {
   border-bottom-right-radius: 40px;
 }
 
+.envelope {
+  background-color: beige;
+  display: inline-block;
+  height: 300px;
+  margin: 0 100px;
+  position: relative;
+  top: 0;
+  width: 500px;
+}
+
+.envelopeTab {
+    width: 500px; 
+    height: 300px; 
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+  position: absolute;
+    
+    border-top: 150px solid #f00;
+    z-index: 1;
+}
+
+.envelopeTab2 {
+  width: 450px; 
+  height: 300px; 
+  border-left: 250px solid transparent;
+  border-right: 250px solid transparent;
+  position: absolute;
+  border-top: 140px solid beige;
+  z-index: 10;
+}
+
+.openEnvelope{
+  animation:openEnvelopeAnimation 2s;
+}
+
+@keyframes openEnvelopeAnimation {
+	0%{
+		transform: rotateX(0deg);
+		transform-origin:center top;
+	  }
+	100%{
+		transform:rotateX(180deg);
+		transform-origin:center top;
+	  }
+}

@@ -20,5 +20,9 @@ function clearStorage() {
 
 function loadPuzzles() {
     // var files = fs.readdirSync('/puzzles/');
-    console.log(files);
+    // console.log(files);
+}
+
+function openEnvelopeAnimation() {
+  document.getElementById("envelope").classList.add("openEnvelope");
 }
