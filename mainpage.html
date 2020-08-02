@@ -14,6 +14,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 </head>
 
 <body onload="loadQuestNotes()">
@@ -23,8 +24,8 @@
     </div>
     <a onclick="openPaper()">
         <div class="container">
-            <a data-toggle="modal" data-target="#exampleModal">
-                <img class="sheetOfPaper" src="questdocument.png" />
+            <a class="sheetOfPaper" data-toggle="modal" data-target="#exampleModal">
+                <img class="animate__animated animate__infinite animate__pulse" src="questdocument.png" />
             </a>
         </div>
     </a>
