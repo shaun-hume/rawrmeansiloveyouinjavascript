@@ -3,7 +3,7 @@ function enterTheHeart() {
   setTimeout(() => {
     window.location.href = "mainpage.html";
   }, 900);
-}
+} 
 
 function loadQuestNotes() {
   document.getElementById("questNotes").innerHTML = "ENTER YOUR QUEST NOTES HERE";
